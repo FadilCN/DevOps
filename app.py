@@ -17,7 +17,7 @@ app = Flask(__name__)
 def form():
       return render_template("form.html")
 
-@app.route("submittodoitem", methods=["POST"])
+@app.route("/submittodoitem", methods=["POST"])
 def submit():
      item_name=request.form.get("name")
      item_desc=request.form.get("desc")
